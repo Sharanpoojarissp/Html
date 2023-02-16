@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background </title>
+    <style>
+
+        #dowmhere{
+            background-color: aqua;
+            border: 2px solid rgb(6, 6, 6);
+            height: 400px;
+            background-image: url('https://www.kasandbox.org/programming-images/avatars/primosaur-tree.png');
+            background-repeat:repeat-x;
+            background-repeat:repeat-y;
+            background-repeat: no-repeat;
+
+            background-position: top right;
+            background-position: top left;
+            background-position: bottom left;
+            background-position: bottom right;
+            background-position: bottom; 
+            background-position: center center;
+
+        }
+
+        .class{
+            background-color: rgb(42, 242, 105);      
+        }
+        #one{
+            border: 3px solid red;
+            /* the first property can be broken into 3 different properties on its own    
+            border-width: 4px;
+            border-color: aqua;
+            border-style: solid; */
+            
+            /* border radius properties */
+            border-radius: 12px;
+            border-top-right-radius: 60px ;
+            border-top-left-radius: 30px ;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 5px;
+
+            /* Coloring the borders now */
+            border-top: 3px solid black;
+            border-bottom: 4px solid tomato;
+            border-right: 6px solid darkviolet ;
+            border-left: 10px solid blue;
+            
+            /*giving height and width to the container*/
+            height: 100px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="this" class="class">
+
+        <div id="one" class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro quod fugit molestiae quibusdam, quas inventore consequuntur alias quaerat. Pariatur commodi, libero consequatur voluptatum soluta voluptates quo aut ipsam animi delectus possimus reprehenderit ipsa voluptate?</div><br><br>
+
+        <div id="two" class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et sunt ratione magni exercitationem officia reiciendis fuga natus nostrum consequatur ad enim dicta aspernatur at reprehenderit perferendis nemo similique ipsa, maxime ducimus sequi repellat facere necessitatibus.</div><br><br>
+
+        <div id="three" class="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, amet? Incidunt, ab sunt! Consectetur ut eos totam tenetur quibusdam excepturi, aut maiores suscipit sint dignissimos et itaque, doloribus ad ullam. Beatae totam ducimus nisi numquam!</div>
+
+    </div><br>
+
+    <div id="dowmhere">
+        image for testing
+    </div>
+</body>
+</html>
