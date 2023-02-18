@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION BAR </title>
+    <style>
+        /*Side margins removed using margin/padding 0 in body */
+        body{
+            margin: 0px;
+            padding: 0px;
+          }
+                 
+        .navbar{
+            background-color: rgb(236, 154, 22);
+            border-radius: 10px;
+            /*m1: this is to stick the entire header w/o any margins from corners margin: -10px -15px;*/
+            /*m2: this can remove white space from top */
+            /*margin-top: -8px;*/
+        }
+        
+        .navbar ul{
+            overflow: auto;
+            margin: 10px 10px;
+        }
+
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 35px 73px;
+        }
+
+        .navbar li a{
+            text-decoration: none;
+            color :rgb(0, 0, 0)
+        }
+
+        .navbar li a:hover{
+            background-color: aqua;
+        }
+
+        .search{         
+            float: right;
+            color: blue;
+            padding: 32px 26px;
+        }
+
+        #search{
+            border-radius: 7px;
+        }       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Continue</a> </li>
+                <div class="search"> 
+                    <input type="text" name="search" id="search" placeholder="Search this website" >  
+                </div>  
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
