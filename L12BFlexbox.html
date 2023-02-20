@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            height: 2744px;
+            width: 100%;
+            border: 3px solid black;
+            background-color: tomato;
+            display : flex;
+            
+            /*Flex Direction Properties */
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: column; 
+            flex-direction: row;
+
+            /*Flex Wrap Properties */
+            flex-wrap: none;      
+            flex-wrap:wrap-reverse;
+            flex-wrap: wrap;
+            
+            /*Justify property -- Space b/w boxes */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            
+            /*align-items -- Align Boxes */
+            align-items: center;
+            align-items: end;
+            align-items: flex-end;
+            align-items: flex-start;
+        }
+       
+        .item{
+            height: 100px;
+            width: 100px;
+            border : 3px solid black;
+            background-color: aquamarine;
+            text-align: center;
+            margin : 10px ;
+            padding: 3px;
+        }
+
+        #one{
+            /*Order - Box having highest order number will be placed first from RHS */
+            order: 2;
+            /* Flexgrow : #one will take most space , toggle to see the practical use */
+            flex-grow: 2;
+            /*#one will Shrink the  most space */
+            flex-shrink: 3;
+
+        }
+        #two{
+            order: 1 ;
+            /*flex-grow: 2;*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container ">
+        
+        <div id="one" class="item">One</div>
+        <div id="two" class="item">Two</div>
+        <div id="three" class="item">Three</div>
+        <!-- <div class="item">Four</div> -->
+        <!-- <div class="item">Five</div> -->
+    </div>
+</body>
+</html>
