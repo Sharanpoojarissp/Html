@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some more selectors in css </title>
+</head>
+<style>
+
+   /* General way of targetting the para tags 
+    p{
+        color : rgb(0, 0, 0);
+        border : 2px solid rgb(10, 255, 2);
+        font-size: medium;
+    }   */
+
+    /* here we are targetting only the paraa which is presnt inside the li of main div tag  */
+    div li p{
+        border : 2px solid pink;
+    }
+
+    /* if we want only the child to take up properties of the mother continer */
+    div > p {
+        border : 2px solid brown;
+        background : palevioletred;
+    }
+
+    /*it will work on the para tag which have it previous siblings as div - outer para in this case */
+    div + p{
+        border: 3px solid darkorange;
+        background-color:  darkcyan;
+    }
+    h2{
+        border: 1px solid blue ;
+        background-color: aqua;
+    }
+    .main{
+        border: 2px solid rgb(0, 0, 0);
+        
+    }
+</style>
+<body>
+    <h2>advanced version of targetting elements using Selectors ! </h2>
+<!-- main div tag -->
+    <div class="main">
+        <!-- second div tag   -->
+        <div class="container2">
+            <ul>
+                <li><p>this is paragraph present insider the li of the container2 </p>
+            </ul> 
+            <p>this is paragraph insider the container2  </p>
+            
+            <!--third div tag  -->
+            <div class="container3">
+                <p>this is paragraph insider the container3 </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p>this is paragraph outside of the container present </p>
+</body>
+</html>
+
