@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .name{
+             background-color: palegreen;
+            /* height :800px;
+             width: 1000px;*/
+             display: none  ;
+        }
+
+        @media (max-width : 800px) {
+            #classs1{
+                display: block;
+                background-color: aquamarine;
+                color: black;
+        }
+    }
+
+        @media (max-width : 600px) {
+            #classs2{
+                display: block;
+                background-color: red;
+                color: white
+        }
+    }
+        @media (max-width : 400px) {
+            #classs3{
+                display: block;
+                background-color: yellow;
+                color: black;
+        }
+    }
+
+        @media (max-width : 200px ) {
+            #classs3{
+                display: block;
+                background-color: rgb(35, 73, 156);
+                color: white;
+        }
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="name" id="classs1">this is a computer </div>
+        <div class="name" id="classs2">this is a laptop </div>
+        <div class="name" id="classs3">this is a mobile </div>
+        <div class="name" id="classs4">this is a tablet </div>
+    </div>
+</body>
+</html>
