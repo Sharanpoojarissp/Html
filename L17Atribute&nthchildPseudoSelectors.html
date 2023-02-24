@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selectors </title>
+    <style>
+        /*basic thing was to make display block of both input as well as container */
+        input{
+            display: block;
+            
+        }
+        .container{
+            border: 3px solid black ;
+            background-color: azure;
+            display: block;
+            width: 233px;
+            margin : auto;
+        }
+        
+        /*Now we will be targeting the form elements using the pseudo selectors */
+        input[type="text"]{
+            background-color: aqua;
+            text-align: center;
+        }
+
+        input[type="password"]{
+            background-color: tomato;
+            text-align: center;
+        }
+
+        input[type="submit"]{
+            background-color: violet;
+            display: block;
+            margin: auto;
+            float: right;
+        }
+
+        /*Heading made and inside the heading is a anchor tag lets try targetting the anchor tag*/
+        /*Actually there was no need to target using pseudo selectors 
+        h3 a{
+            border: 2px solid red;
+            background-color: blueviolet;
+            color: yellow;
+            text-decoration: none;
+        }                                               */
+
+        /*targetting anchor tag using pseudo selector */
+        a[target]{
+            border: 2px solid magenta;
+            text-decoration: none;
+            background-color: rgb(230, 177, 177);
+        }
+
+        a[target="_self"]{
+            border: 2px solid rgb(0, 0, 0);
+            text-decoration: none;
+            background-color: rgb(246, 66, 66);
+        }
+
+        /*targetting the li elements using the nth child pseudo selector  */
+        
+        li:nth-child(2n){
+            border: 1px solid brown;
+            background-color: rgb(241, 241, 241);
+        }
+        li:nth-child(2n+3){
+            border: 1px solid brown;
+            background-color: blue;
+        }
+        
+        li:nth-child(odd){
+            border: 1px solid brown;
+            background-color: red;
+        }
+        li:nth-child(even){
+            border: 1px solid brown;
+            background-color: blue;
+        }           
+    </style>
+</head>
+<body>
+        <div class="container">
+
+            <h3><a href="https://facebook.com" target="_blank">Welcome to Meta India </a></h3>
+            <h3><a href="https://google.com" target="_self" >Welcome to Google India </a></h3>
+
+            <form action="" class="firstclass">
+                <input type="text" placeholder="Enter your Username">
+                <input type="password" placeholder="Enter your Password">
+                <input type="submit" value="Submit">
+            </form>
+
+
+
+            <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item1</li>
+            <li class="item" id="item-3">item1</li>
+            <li class="item" id="item-4">item1</li>
+            <li class="item" id="item-5">item1</li>
+            <li class="item" id="item-6">item1</li>
+            <li class="item" id="item-7">item1</li>
+            <li class="item" id="item-8">item1</li>
+            <li class="item" id="item-9">item1</li>
+            <li class="item" id="item-10">item1</li>
+            </ul>
+
+
+
+        </div>
+</body>
+</html>
