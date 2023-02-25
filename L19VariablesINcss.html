@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable/ custom properties</title>
+    <style>
+       
+        /*Global variable : analogy */
+        :root{
+            /*we can create diff varibales and use it accordingly ! */
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw:233px;
+        }
+
+        .container{
+            display: flex;
+            margin: auto;
+            align-items: center;
+            --box-color: rgb(221, 95, 17);
+            background-color: var(--danger-color);
+            max-width: var(--maxw);
+        }
+
+        /*Scope fof the --boc-color is defined only to its box only not ouside it : its just like functions
+        
+        Inorder to use it in the container clas we need to right it once again */
+        .boxes{
+            height: 200px;
+            width: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red ;
+            /*top and bottom se 2px , and side se 10px  */
+            box-shadow: 3px 3px var(--danger-color);
+            margin: 2px 10px ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+</body>
+</html>
