@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+</head><style>
+    /*all the heading in the one row */
+    .container{
+        display: flex;
+    }
+
+    .card{
+        padding: 20px 12px;
+        margin : 23px 3px;
+        background-color: aquamarine;
+        /*border: 2px solid red;*/
+        
+        /*now after removing the borders we will study the box shadow*/
+        box-shadow: 10px 13px rgb(224, 106, 22);
+        /*now this px in above prop can be negative too , comment it out */
+        box-shadow: -10px -13px rgb(224, 106, 22);
+        /*Blur radius can also be given in the above prop ,comment it out 
+        as we increase blur radius , lightnes increase as well as spreads out */
+        box-shadow: 5px 7px 10px rgb(211, 51, 19);
+        /*spread radius*/ 
+        box-shadow: 5px 7px 10px 10px rgb(211, 51, 19);
+        /* Box shadow : offset-x offset-y blurradius spreadradius */
+        
+        /*rbg and alpha >alpha darker color*/
+        box-shadow: 10px 13px rgb(255, 0, 0,0.5);
+        
+        /*inset property of the box shadow
+        andher ke taraf shadow  */
+        box-shadow: inset 5px 90px rgb(255, 0, 0);
+
+        /*Multiple box shadow can be given as */
+        box-shadow:  4px 6px rgb(255 0 0), 6px 9px blue;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <div class="card" id="car1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel magnam sint voluptate sapiente, sed asperiores ad, animi tempora excepturi reprehenderit earum iure quis quaerat. Nemo ipsa voluptas cum, eos optio officia aliquam corporis.</p>
+        </div>
+
+        <div class="card" id="car2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel magnam sint voluptate sapiente, sed asperiores ad, animi tempora excepturi reprehenderit earum iure quis quaerat. Nemo ipsa voluptas cum, eos optio officia aliquam corporis.</p>
+        </div>
+
+        <div class="card" id="car3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel magnam sint voluptate sapiente, sed asperiores ad, animi tempora excepturi reprehenderit earum iure quis quaerat. Nemo ipsa voluptas cum, eos optio officia aliquam corporis.</p>
+        </div>
+
+    </div>
+</body>
+</html>
