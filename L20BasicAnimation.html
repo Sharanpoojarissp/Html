@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes !</title>
+    <style>
+        .maincontainer{
+            background-color: tomato;
+            
+        }
+
+        .box{
+            height : 250px;
+            width : 250px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            position: relative;
+            /*these are the three basic properties needed to animate ! */
+            animation-name: sharan1;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+
+            /*animation-direction: alternate;
+            animation-direction: reverse;
+
+            /* start after 5s 
+            animation-delay: 5s;*/
+
+            /* initially slow then fast  
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-out;*/
+
+            /*animation-fill-mode:forwards;
+            animation-fill-mode:backwards;*/
+        }
+
+        @keyframes sharan{
+            from{
+                width : 100px;
+            }
+
+            to{
+                width : 1400px;
+            }
+        }
+
+        @keyframes sharan1{
+            0%{
+                top:0px;
+                left:0px;
+            }
+
+            25%{
+                top:250px;
+                left:0px;
+            }
+
+            75%{
+                top:250px;
+                left:250px;
+            }
+
+            100%{
+                top:0px;
+                left:250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="box">
+            this it the box inside the main container! 
+        </div>
+    </div>
+</body>
+</html>
