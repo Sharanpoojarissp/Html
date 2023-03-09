@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>row and column </title>
+    <style>
+        .container{
+            background-color: rgb(202, 188, 188);
+            display : grid;
+            grid-template-columns: repeat(5 , 1fr);
+            grid-template-rows: repeat(4 , 1fr);
+            grid-gap: 1rem;
+        }
+
+        .griditems{
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 23px;
+        }
+
+        .griditems:first-child{
+            /*grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;*/
+
+            /*shortcut */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="griditems"> griditem -1</div>
+        <div class="griditems"> griditem -2</div>
+        <div class="griditems"> griditem -3</div>
+        <div class="griditems"> griditem -4</div>
+        <div class="griditems"> griditem -5</div>
+        <div class="griditems"> griditem -6</div>
+        <div class="griditems"> griditem -7</div>
+        <div class="griditems"> griditem -8</div>
+        <div class="griditems"> griditem -9</div>
+        <div class="griditems"> griditem -10</div>
+        <div class="griditems"> griditem -11</div>
+        <div class="griditems"> griditem -12</div>
+        <div class="griditems"> griditem -13</div>
+        <div class="griditems"> griditem -14</div>
+        <div class="griditems"> griditem -15</div>
+        <div class="griditems"> griditem -16</div>
+    </div>
+</body>
+</html>
